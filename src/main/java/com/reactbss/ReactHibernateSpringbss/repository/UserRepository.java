@@ -1,11 +1,11 @@
 package com.reactbss.ReactHibernateSpringbss.repository;
 
-import com.reactbss.ReactHibernateSpringbss.model.Ruser;
+import com.reactbss.ReactHibernateSpringbss.model.User;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface RuserRepository extends CrudRepository<Ruser, Integer> {
+public interface UserRepository extends CrudRepository<User, Integer> {
 
-    Ruser findByUsername(String username);
+    User findByUsername(String username);
 }

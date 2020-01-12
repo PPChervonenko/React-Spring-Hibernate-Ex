@@ -1,19 +1,19 @@
 package com.reactbss.ReactHibernateSpringbss.service;
 
-import com.reactbss.ReactHibernateSpringbss.model.Ruser;
-import com.reactbss.ReactHibernateSpringbss.model.RuserDto;
+import com.reactbss.ReactHibernateSpringbss.model.User;
+import com.reactbss.ReactHibernateSpringbss.model.UserDto;
 
 import java.util.List;
 
-public interface RuserService {
+public interface UserService {
 
-    Ruser save(RuserDto user);
-    List<Ruser> findAll();
+    User save(UserDto user);
+    List<User> findAll();
     void delete(int id);
 
-    Ruser findOne(String rusername);
+    User findOne(String rusername);
 
-    Ruser findById(int id);
+    User findById(int id);
 
-    RuserDto update(RuserDto ruserDto);
+    UserDto update(UserDto ruserDto);
 }
